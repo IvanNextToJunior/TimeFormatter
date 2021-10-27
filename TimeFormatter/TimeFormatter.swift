@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TimeFormatter{
+open class TimeFormatter{
     
     private var seconds = TimeInterval()
     
@@ -33,7 +33,7 @@ class TimeFormatter{
     }
     
     //Метод, передающий информацию о длительности записи в приложение
-    func convertTimeToString(_ number: Int64?) -> String?{
+   public func convertTimeToString(_ number: Int64?) -> String?{
         
         if let unwrappedNumber = number {
             
