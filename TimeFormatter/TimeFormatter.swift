@@ -18,7 +18,7 @@ open class TimeFormatter{
         let formatter = DateComponentsFormatter()
         
         // Длительность будет отображаться как 1:00:00
-        if seconds > 59.59{
+        if seconds >= 3600 {
             formatter.allowedUnits = [.hour, .minute, .second]
         }
         
